@@ -7,6 +7,7 @@
 - [Stax Overflow Post Form](#stax-overflow-post-form)
   - [Table of Contents](#table-of-contents)
     - [About this page](#about-this-page)
+    - [Link to the page](#link-to-the-page)
     - [What are the contents for?](#what-are-the-contents-for)
     - [Key features](#key-features)
     - [Guide on how to install](#guide-on-how-to-install)
@@ -21,6 +22,8 @@ and collaborate on various topics related to programming and software
 development. Whether you are looking for solutions to coding problems,
 seeking career advice, or wanting to share your own tutorials and
 tips, this is the place for you.</div>
+
+### Link to the [page](https://alfifrr.github.io/deploy-final-checkpoint/)
 
 ### What are the contents for?
 
@@ -73,15 +76,23 @@ tips, this is the place for you.</div>
 
 ### Languages used
 
-- HTML **(.html)**
+- Hypertext Markup Language **(.html)**
 - Markdown **(.md)**
+- Cascading Style Sheets **(.css)**
+- Javascript **(.js)**
 
 !['HTML5 Logo'](https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/800px-HTML_logo_and_wordmark.svg.png)
 
 !['Markdown Logo'](https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Markdown-mark.svg/1024px-Markdown-mark.svg.png)
 
+!['CSS Logo'](https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/363px-CSS3_logo_and_wordmark.svg.png)
+
+!['JS Logo'](https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/JavaScript-logo.png/240px-JavaScript-logo.png)
+
 ### Licenses
 
 This repository is licensed under the MIT License. &copy; 2024 Alfian Ferdinan  
 HTML logo attribution by W3C, CC BY 3.0, https://commons.wikimedia.org/w/index.php?curid=12736763  
-Markdown logo attribution by Dustin Curtis - https://github.com/dcurtis/markdown-mark/tree/master/svg, CC0, https://commons.wikimedia.org/w/index.php?curid=31095459
+Markdown logo attribution by Dustin Curtis - https://github.com/dcurtis/markdown-mark/tree/master/svg, CC0, https://commons.wikimedia.org/w/index.php?curid=31095459  
+CSS logo is licensed under the [Creative Commons Attribution 3.0 Unported](https://en.wikipedia.org/wiki/en:Creative_Commons) license. Author: Rudloff  
+JS logo is licensed under the [Expat License](https://commons.wikimedia.org/wiki/Category:Expat/MIT_License), sometimes known as the **MIT License**. Copyright © Christopher Williams

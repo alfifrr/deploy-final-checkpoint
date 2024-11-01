@@ -267,6 +267,12 @@ body {
 
   display: flex;
   flex-direction: column;
+
+  background: radial-gradient(
+    hsl(210, 72%, 65%, 40%),
+    hsl(200, 62%, 73%, 40%),
+    white 60%
+  );
 }
 #contentDiv textarea,
 #contentDiv input {
@@ -334,6 +340,10 @@ input[type="submit"] {
   text-align: center;
   text-decoration: none;
   border-radius: 5px;
+}
+
+footer h6 {
+  text-align: center;
 }
 
 @media (min-width: 480px) {
