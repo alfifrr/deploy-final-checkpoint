@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, minimum-scale=1"
+    />
+    <meta
+      name="description"
+      content="A Stack Overflow clone made from pure HTML, none exists on the internet!"
+    />
+    <title>Knowledge Overflow</title>
+
+    <link rel="stylesheet" href="./src/style.css" />
+  </head>
+
+  <body>
+    <div id="titleArea">
+      <h1 id="title">
+        Welcome to the <span class="gradientText">Knowledge Overflow</span>, a
+        shelter for developers!
+      </h1>
+    </div>
+
+    <header id="header">
+      <button type="button" id="hamburger-btn" title="Menu">
+        <svg
+          aria-hidden="true"
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          fill="none"
+          viewBox="0 0 24 24"
+        >
+          <path
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-width="2"
+            d="M5 7h14M5 12h14M5 17h14"
+          />
+        </svg>
+
+        <svg
+          id="closeIcon"
+          class="w-6 h-6 text-gray-800 dark:text-white"
+          aria-hidden="true"
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          fill="none"
+          viewBox="0 0 24 24"
+        >
+          <path
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M6 18 17.94 6M18 18 6.06 6"
+          />
+        </svg>
+      </button>
+
+      <nav id="nav">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#post">Post</a></li>
+        </ul>
+      </nav>
+
+      <nav id="dropdown">
+        <a href="#">Home</a>
+        <a href="#about">About</a>
+        <a href="#post">Post</a>
+      </nav>
+    </header>
+
+    <main>
+      <section id="preface">
+        <div>
+          <h2 id="about">About This Page</h2>
+          <p>
+            This page is a clone of Stack Overflow, created without any
+            programming framework, so it feels light. It serves as a platform
+            for developers to share knowledge, ask questions, and collaborate on
+            various topics related to programming and software development.
+            Whether you are looking for solutions to coding problems, seeking
+            career advice, or wanting to share your own tutorials and tips, this
+            is the place for you.
+          </p>
+          <a href="#post" id="cta">Get started &#8594;</a>
+        </div>
+
+        <svg
+          id="logo"
+          aria-hidden="true"
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          fill="none"
+          viewBox="0 0 24 24"
+        >
+          <defs>
+            <linearGradient id="gradient1" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" style="stop-color: #6366f1; stop-opacity: 1" />
+              <stop offset="50%" style="stop-color: #a855f7; stop-opacity: 1" />
+              <stop
+                offset="100%"
+                style="stop-color: #ec4899; stop-opacity: 1"
+              />
+            </linearGradient>
+          </defs>
+          <path
+            stroke="url(#gradient1)"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M19 7h1v12a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1V5a1 1 0 0 0-1-1H5a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1h11.5M7 14h6m-6 3h6m0-10h.5m-.5 3h.5M7 7h3v3H7V7Z"
+          />
+        </svg>
+      </section>
+
+      <section id="post">
+        <h2>Do you have something in mind?</h2>
+        <form id="contentDiv" action="/action_page.php" method="POST">
+          <label for="title"><strong>Post Title</strong></label>
+          <br />
+          <input
+            type="text"
+            name="title"
+            id="postTitle"
+            placeholder="Title..."
+          /><br />
+
+          <label for="postTime"><strong>I want to send this:</strong></label>
+          <select name="postTime" id="postTime">
+            <option value="now">Now</option>
+            <option value="later">Later</option></select
+          ><br />
+
+          <label for="postContent"><strong>Content</strong></label
+          ><br />
+          <textarea
+            name="postContent"
+            id="postContent"
+            placeholder="Something on your mind..."
+            rows="3"
+          ></textarea
+          ><br />
+
+          <label for="topicCheckbox"><strong>Topic</strong></label
+          ><br />
+          <input type="checkbox" name="topicCheckbox" id="checkbox0" checked />
+          <label for="checkbox0">General</label><br />
+          <input type="checkbox" name="topicCheckbox" id="checkbox1" />
+          <label for="checkbox1">Question</label><br />
+          <input type="checkbox" name="topicCheckbox" id="checkbox2" />
+          <label for="checkbox2">Tutorial & tips</label><br />
+          <input type="checkbox" name="topicCheckbox" id="checkbox3" />
+          <label for="checkbox3">Event & career</label><br />
+
+          <input type="checkbox" name="topicCheckbox" id="checkbox4" />
+          <label for="checkbox4">Other topic:</label>
+          <input
+            type="text"
+            name="otherTopic"
+            id="otherTopic"
+            placeholder="topic name..."
+          />
+
+          <br />
+
+          <label for="radio1"
+            ><strong>Agree to the terms and conditions</strong></label
+          ><br />
+          <input type="radio" name="radio1" id="radioAgree" checked /><label
+            for="radioAgree"
+            >I agree to the forum rules.</label
+          ><br />
+          <input type="radio" name="radio1" id="radioDisagree" /><label
+            for="radioDisagree"
+            >I decline.</label
+          ><br />
+
+          <input type="submit" value="Post your masterpiece!" />
+        </form>
+      </section>
+
+      <div id="bottomSection">
+        <section id="terms">
+          <h2>Community Rules</h2>
+          <p>
+            Please ensure that your posts adhere to the
+            <a href="#">community guidelines</a>. Respect others, avoid
+            offensive language, and contribute positively to the discussions.
+            Remember that this forum is a place for constructive and respectful
+            dialogue. Any form of harassment, discrimination, or inappropriate
+            behavior will not be tolerated. Always strive to provide helpful and
+            insightful contributions, and be open to different perspectives. By
+            participating in this community, you agree to uphold these standards
+            and help create a welcoming environment for everyone.
+          </p>
+        </section>
+
+        <section id="howTo">
+          <h2>How to Use This Page</h2>
+          <p>
+            This is the form page, there are many forms for you to fill them
+            out, as follow:
+          </p>
+          <ul>
+            <li>
+              <strong>Post Title:</strong> Insert your title of the topic you
+              like
+            </li>
+            <li>
+              <strong>I want to send this:</strong> You can schedule the time
+              you want to send.
+            </li>
+            <li>
+              <strong>Content:</strong> Fill out the detailed post and what the
+              post is about there.
+            </li>
+            <li>
+              <strong>Topic:</strong> Several checkmarks to determine which
+              topic(s) is about.
+            </li>
+            <li>
+              <strong>Agree to the terms and conditions:</strong> This is
+              mandatory, you need to abide by the forum rules to create a
+              healthy environment, by not agreeing to this will result in a
+              disabled submit button.
+            </li>
+            <li>
+              <strong>"Post your masterpiece" button:</strong> Make sure to
+              double-check your post before sending it, let everyone see your
+              thoughts!
+            </li>
+          </ul>
+        </section>
+      </div>
+    </main>
+
+    <footer>
+      <h6>241021 - Alfian Ferdinan</h6>
+      <a id="backToTop" href="#top">Back to top</a>
+    </footer>
+  </body>
+  <script src="./src/script.js"></script>
+</html>
