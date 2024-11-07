@@ -1,10 +1,10 @@
-# Stax Overflow Post Form
+# Knowledge Overflow Post Form
 
 !['banner image'](https://images.unsplash.com/photo-1519692933481-e162a57d6721?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fHJhaW58ZW58MHx8MHx8fDA%3D)
 
 ## Table of Contents
 
-- [Stax Overflow Post Form](#stax-overflow-post-form)
+- [Knowledge Overflow Post Form](#knowledge-overflow-post-form)
   - [Table of Contents](#table-of-contents)
     - [About this page](#about-this-page)
     - [Link to the page](#link-to-the-page)
@@ -16,12 +16,7 @@
 
 ### About this page
 
-<div align="center">This page is a clone of Stack Overflow, created using pure HTML. It
-serves as a platform for developers to share knowledge, ask questions,
-and collaborate on various topics related to programming and software
-development. Whether you are looking for solutions to coding problems,
-seeking career advice, or wanting to share your own tutorials and
-tips, this is the place for you.</div>
+<div align="center">This is a platform for developers to share knowledge, ask questions, and collaborate on various topics related to programming and software development. Whether you are looking for solutions to coding problems, seeking career advice, or wanting to share your own tutorials and tips, this is the right place for you!</div>
 
 ### Link to the [page](https://alfifrr.github.io/deploy-final-checkpoint/)
 
@@ -55,9 +50,13 @@ tips, this is the place for you.</div>
    ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
    ```
    Note: you have to put a password to that key and it will require you to fill a password everytime you want to interact with the repository.
-4. Copy the SSH public key to your keyboard by using this command:
+4. Copy the SSH public key to your keyboard by using this command in **Linux**:
    ```bash
    cat ~/.ssh/id_rsa.pub
+   ```
+   For **Windows**:
+   ```bash
+   type %userprofile%\.ssh\id_rsa.pub
    ```
 5. Navigate to your **Github account (Click on your Github's profile picture on the top right) > Settings > SSH and GPG keys > New SSH key**:
    - Title: fill the key title (which devices are you using with)
@@ -66,11 +65,11 @@ tips, this is the place for you.</div>
    - Add SSH key
 6. Head to the desired folder (example: `/Desktop/Projects/`) and clone the repository there
    ```bash
-   git clone git@github.com:revou-fsse-oct24/module-1-alfifrr.git
+   git clone git@github.com:revou-fsse-oct24/module-2-alfifrr.git
    ```
    Don't forget to access the cloned repository
    ```bash
-   cd /module-1-alfifrr
+   cd /module-2-alfifrr
    ```
 7. Assuming that you're using Visual Studio Code, access the `index.html` file using [this Visual Studio Code extension](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) or clicking on it directly to see on your browser (but you have to reload manually using `F5` key or refresh button every time you made some changes). Also you can access the `README.md` file using this shortcut: `CTRL+K` then `V`
 
