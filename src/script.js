@@ -6,6 +6,11 @@ const svgCross = hamburgerButton.querySelector("svg:nth-child(2)");
 
 const darkModeToggle = document.getElementById("darkMode");
 
+if (localStorage.getItem("darkMode") === "true") {
+  document.body.classList.add("darkMode");
+  darkModeToggle.checked = true;
+}
+
 hamburgerButton.addEventListener("click", function () {
   if (dropdown.style.display === "none" || dropdown.style.display === "") {
     dropdown.style.display = "flex";
@@ -26,6 +31,15 @@ window.addEventListener("resize", function () {
 
 darkModeToggle.addEventListener("change", function () {
   document.body.classList.toggle("darkMode");
+
+  if (
+    localStorage.getItem("darkMode") === null ||
+    localStorage.getItem("darkMode") === "false"
+  ) {
+    localStorage.setItem("darkMode", "true");
+  } else {
+    localStorage.setItem("darkMode", "false");
+  }
 });
 
 let prevScrollpos = window.scrollY;
@@ -36,10 +50,6 @@ window.onscroll = function () {
     navBar.style.top = "0";
   } else {
     navBar.style.top = "-10vh";
-
-    // dropdown.style.display = "none";
-    // svgLines.style.display = "block";
-    // svgCross.style.display = "none";
   }
   prevScrollpos = currentScrollPos;
 };
