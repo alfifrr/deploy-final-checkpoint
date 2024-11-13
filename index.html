@@ -18,6 +18,14 @@
 
     <title>Knowledge Overflow</title>
 
+    <link
+      rel="preload"
+      href="./src/fonts/FamiljenGrotesk-Bold.ttf"
+      as="font"
+      type="font/ttf"
+      crossorigin="anonymous"
+    />
+
     <link rel="stylesheet" href="./src/style.css" />
     <link
       rel="icon"
@@ -49,33 +57,6 @@
           <a href="#post" id="cta">Get started &#8594;</a>
         </div>
 
-        <!-- <svg
-          id="logo"
-          aria-hidden="true"
-          xmlns="http://www.w3.org/2000/svg"
-          width="24"
-          height="24"
-          fill="none"
-          viewBox="0 0 24 24"
-        >
-          <defs>
-            <linearGradient id="gradient1" x1="0%" y1="0%" x2="100%" y2="100%">
-              <stop offset="0%" style="stop-color: #6366f1; stop-opacity: 1" />
-              <stop offset="50%" style="stop-color: #a855f7; stop-opacity: 1" />
-              <stop
-                offset="100%"
-                style="stop-color: #ec4899; stop-opacity: 1"
-              />
-            </linearGradient>
-          </defs>
-          <path
-            stroke="url(#gradient1)"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="2"
-            d="M19 7h1v12a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1V5a1 1 0 0 0-1-1H5a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1h11.5M7 14h6m-6 3h6m0-10h.5m-.5 3h.5M7 7h3v3H7V7Z"
-          />
-        </svg> -->
         <picture id="logo">
           <source
             media="(min-width: 1024px)"
@@ -155,6 +136,7 @@
               alt=""
               id="guy"
               class="carouselImg"
+              loading="lazy"
             />
 
             <img
@@ -162,6 +144,7 @@
               src="./src/images/carousel/092cc9e4cf13e29020303bbc80c06ee2.jpeg"
               alt=""
               class="carouselImg"
+              loading="lazy"
             />
 
             <img
@@ -169,12 +152,14 @@
               alt=""
               id="typescript"
               class="carouselImg"
+              loading="lazy"
             />
             <img
               src="./src/images/carousel/0a1924819b8e49629a15f92594e2e527.jpeg"
               alt=""
               id="seniorTips"
               class="carouselImg"
+              loading="lazy"
             />
 
             <div id="boxEmerald" class="box emerald"></div>
@@ -194,12 +179,14 @@
               alt=""
               id="guy1"
               class="carouselImg"
+              loading="lazy"
             />
             <img
               id="flowchart"
               src="./src/images/carousel/1d211d8657f99fd2fea8d204c9bdca77.jpeg"
               alt=""
               class="carouselImg"
+              loading="lazy"
             />
 
             <img
@@ -207,6 +194,7 @@
               alt=""
               id="github"
               class="carouselImg"
+              loading="lazy"
             />
 
             <div id="boxGray" class="box gray"></div>
@@ -224,29 +212,29 @@
         <h2>Do you have something in mind?</h2>
         <form id="contentDiv" action="/action_page.php" method="POST">
           <label for="title"><strong>Post Title</strong></label>
-          <br />
+
           <input
             type="text"
             name="title"
             id="postTitle"
             placeholder="Title..."
-          /><br />
+          />
 
           <label for="postTime"><strong>I want to send this:</strong></label>
           <select name="postTime" id="postTime">
             <option value="now">Now</option>
-            <option value="later">Later</option></select
-          ><br />
+            <option value="later">Later</option>
+          </select>
 
-          <label for="postContent"><strong>Content</strong></label
-          ><br />
+          <label for="postContent" id="contentLabel"
+            ><strong>Content</strong></label
+          >
           <textarea
             name="postContent"
             id="postContent"
             placeholder="Something on your mind..."
             rows="3"
-          ></textarea
-          ><br />
+          ></textarea>
 
           <label for="topicCheckbox"><strong>Topic</strong></label>
 
@@ -290,15 +278,19 @@
 
           <label for="radio1"
             ><strong>Agree to the terms and conditions</strong></label
-          ><br />
-          <input type="radio" name="radio1" id="radioAgree" checked /><label
-            for="radioAgree"
-            >I agree to the forum rules.</label
-          ><br />
-          <input type="radio" name="radio1" id="radioDisagree" /><label
-            for="radioDisagree"
-            >I decline.</label
-          ><br />
+          >
+          <div class="radio-container">
+            <input type="radio" name="radio1" id="radioAgree" checked /><label
+              for="radioAgree"
+              >I agree to the forum rules.</label
+            >
+          </div>
+          <div class="radio-container">
+            <input type="radio" name="radio1" id="radioDisagree" /><label
+              for="radioDisagree"
+              >I decline.</label
+            >
+          </div>
 
           <input type="submit" value="Post your masterpiece!" />
         </form>
@@ -378,7 +370,7 @@
       <div id="footerContent">
         <div id="subfooter">
           <div>
-            <h4>Quick Links</h4>
+            <h3>Quick Links</h3>
             <ul>
               <li><a href="#">Home</a></li>
               <li><a href="#">About Us</a></li>
@@ -389,7 +381,7 @@
             </ul>
           </div>
           <div>
-            <h4>Community & Resources</h4>
+            <h3>Community & Resources</h3>
             <ul>
               <li><a href="#">Blog</a></li>
               <li><a href="#">FAQs</a></li>
@@ -399,7 +391,7 @@
             </ul>
           </div>
           <div>
-            <h4>Follow Us</h4>
+            <h3>Follow Us</h3>
             <a href="#">X</a> | <a href="#">Facebook</a> |
             <a href="#">GitHub</a>
           </div>

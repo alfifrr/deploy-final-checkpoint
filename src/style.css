@@ -6,6 +6,7 @@
   font-family: "Familjen Grotesk";
   src: url("./fonts/FamiljenGrotesk-Bold.ttf");
   font-weight: 700;
+  font-display: swap;
 }
 @font-face {
   font-family: "Merriweather Sans";
@@ -728,7 +729,7 @@ input[type="radio"]:checked {
 
 #backToTop,
 input[type="submit"] {
-  background-color: var(--sky500);
+  background-color: var(--sky800);
   color: var(--neutral50);
   border: none;
   border-radius: 0.5rem;
@@ -745,7 +746,7 @@ input[type="submit"] {
 }
 #backToTop:hover,
 input[type="submit"]:hover {
-  background-color: color-mix(in srgb, var(--sky500) 90%, transparent);
+  background-color: color-mix(in srgb, var(--sky900) 90%, transparent);
 }
 #backToTop:active,
 input[type="submit"]:active {
@@ -786,7 +787,17 @@ input[type="submit"]:active {
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
 }
 #footerContent a:not(#backToTop) {
-  color: var(--sky500);
+  color: var(--sky800);
+
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  margin: 0.25rem 0;
+  font-size: 1rem;
+  text-decoration: none;
+}
+#footerContent a:not(#backToTop):hover {
+  color: var(--sky900);
+  background-color: var(--neutral100);
 }
 
 #subfooter {
@@ -799,6 +810,21 @@ input[type="submit"]:active {
 #subfooter ul {
   list-style-type: none;
   padding: 0;
+}
+
+#contentLabel {
+  display: block;
+}
+
+.radio-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+.radio-container input[type="radio"] {
+  margin-right: 0.5rem;
+  width: 20px;
+  height: 20px;
 }
 
 @media only screen and (min-width: 480px) {
