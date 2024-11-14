@@ -33,7 +33,7 @@
 
 <div align="center">This is a platform for developers to share knowledge, ask questions, and collaborate on various topics related to programming and software development. Whether you are looking for solutions to coding problems, seeking career advice, or wanting to share your own tutorials and tips, this is the right place for you!</div>
 
-### Link to the [page](https://alfifrr.github.io/deploy-final-checkpoint/)
+### Link to the [page](https://alfii.site/)
 
 ### What are the contents for?
 
