@@ -758,6 +758,29 @@ input[type="submit"]:active {
   box-shadow: 0 0 15px color-mix(in srgb, var(--sky500) 50%, transparent);
 }
 
+#topPicks {
+  max-height: 100vh;
+  margin: 0 1rem;
+}
+#topPicks h2 {
+  text-align: center;
+}
+#toolsCarousel {
+  overflow: hidden;
+  max-height: 90vh;
+}
+#toolsCarousel > figure {
+  position: relative;
+  width: 500%;
+  margin: 0;
+  left: 0;
+  animation: 20s slider infinite;
+}
+#toolsCarousel img {
+  width: 20%;
+  float: left;
+}
+
 #bottomSection {
   display: flex;
   flex-direction: column;
@@ -1060,5 +1083,35 @@ input[type="submit"]:active {
   }
   100% {
     opacity: 0;
+  }
+}
+
+@keyframes slider {
+  0% {
+    left: 0;
+  }
+  20% {
+    left: 0;
+  }
+  25% {
+    left: -100%;
+  }
+  45% {
+    left: -100%;
+  }
+  50% {
+    left: -200%;
+  }
+  70% {
+    left: -200%;
+  }
+  75% {
+    left: -300%;
+  }
+  95% {
+    left: -300%;
+  }
+  100% {
+    left: -400%;
   }
 }

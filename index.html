@@ -12,7 +12,7 @@
     />
     <meta
       name="keywords"
-      content="stack overflow, clone, html, css, javascript, web development, post"
+      content="knowledge overflow, html, css, javascript, web development, post, forum, community"
     />
     <meta name="author" content="Alfian Ferdinan" />
 
@@ -37,7 +37,6 @@
       "
     />
   </head>
-
   <body>
     <header class="radialBackground">
       <h1 id="title">
@@ -109,6 +108,7 @@
       <nav id="nav">
         <ul>
           <li><a href="#carousel">Community</a></li>
+          <li><a href="#topPicks">Top Picks</a></li>
           <li><a href="#terms">Terms</a></li>
           <li><a href="#footerContent">About</a></li>
           <li><a href="#post">Post</a></li>
@@ -121,6 +121,7 @@
 
     <nav id="dropdown" class="blurBehind">
       <a href="#carousel">Community</a>
+      <a href="#topPicks">Top Picks</a>
       <a href="#terms">Terms</a>
       <a href="#footerContent">About</a>
       <a href="#post">Post</a>
@@ -296,7 +297,55 @@
         </form>
       </section>
 
-      <div id="bottomSection" class="radialBackground">
+      <section id="topPicks">
+        <h2>Top Picks: Frameworks & Tools You Should Know</h2>
+        <div id="toolsCarousel">
+          <figure>
+            <a
+              target="_blank"
+              href="https://www.rlogical.com/blog/front-end-development-tools-for-front-end-developer/"
+              ><img
+                loading="lazy"
+                src="./src/images/tools-carousel/tools1.jpg"
+                alt="tools1"
+            /></a>
+            <a
+              target="_blank"
+              href="https://blog.back4app.com/backend-frameworks/"
+              ><img
+                loading="lazy"
+                src="./src/images/tools-carousel/tools2.jpg"
+                alt="tools2"
+            /></a>
+            <a
+              target="_blank"
+              href="https://101blockchains.com/best-blockchain-tools/"
+              ><img
+                loading="lazy"
+                src="./src/images/tools-carousel/tools3.jpg"
+                alt="tools3"
+            /></a>
+            <a
+              target="_blank"
+              href="https://www.samarpaninfotech.com/blog/best-ai-development-tools-frameworks/"
+              ><img
+                loading="lazy"
+                src="./src/images/tools-carousel/tools4.jpg"
+                alt="tools4"
+            /></a>
+            <a
+              target="_blank"
+              href="https://www.rlogical.com/blog/front-end-development-tools-for-front-end-developer/"
+              ><img
+                loading="lazy"
+                src="./src/images/tools-carousel/tools1.jpg"
+                alt="tools1"
+            /></a>
+          </figure>
+        </div>
+      </section>
+
+      <section id="bottomSection" class="radialBackground">
         <section id="terms">
           <h2>Community Terms and Rules</h2>
           <ol>
@@ -363,7 +412,7 @@
             </li>
           </ul>
         </section>
-      </div>
+      </section>
     </main>
 
     <footer>
@@ -406,5 +455,5 @@
       </div>
     </footer>
   </body>
-  <script src="./src/script.js"></script>
+  <script src="./src/script.js" defer></script>
 </html>

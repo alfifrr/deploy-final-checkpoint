@@ -123,7 +123,7 @@
 
 5. **Deploy Site:**
    - Click **Deploy Site**, and Netlify will automatically start building and deploying the repository.
-   - Once complete, you’ll get a default Netlify domain (e.g., `knowledge-overflow.netlify.app`), which you can use to preview your site.
+   - Once complete, you’ll get a default Netlify domain (e.g., [knowledge-overflow.netlify.app](https://knowledge-overflow.netlify.app/)), which you can use to preview your site.
 
 ---
 
@@ -142,7 +142,7 @@
 2. **Add Custom Domain in Netlify:**
 
    - In your Netlify dashboard, go to **Site settings > Domain management**.
-   - Under **Custom domains**, click **Add domain** and enter your purchased domain (e.g., `alfii.site`).
+   - Under **Custom domains**, click **Add domain** and enter your purchased domain (e.g., [alfii.site](https://alfii.site/)).
    - Note: you will be prompted to either use Netlify's DNS or your domain registrar, you will choose the Netlify one after this.
    - ![32](./src/images/documentation/32--usingnetlifydns.jpg)
    - ![33](./src/images/documentation/33-gotopanel.jpg)
@@ -176,7 +176,7 @@
 
 ### 4. Confirm Deployment and Access Your Site
 
-- After propagation, the changes of your site should be applied and accessible via your custom domain (e.g., `alfii.site`).
+- After propagation, the changes of your site should be applied and accessible via your custom domain (e.g., [alfii.site](https://alfii.site/)).
 - ![38](./src/images/documentation/38-done.jpg)
 - Test your site in a browser to confirm everything is set up correctly.
 
